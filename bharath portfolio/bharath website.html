@@ -127,6 +127,47 @@
             margin-top: 20px;
         }
 
+        /* Flexbox Layout for About Me Section */
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        /* Timeline (Education & Experience) Styling */
+        .timeline {
+            border-left: 4px solid #4CAF50;
+            margin: 20px 0;
+            padding-left: 20px;
+            position: relative;
+            width: 300px;
+        }
+
+        .timeline-item {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -30px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+
+        .timeline-item h3 {
+            margin: 0 0 10px;
+        }
+
+        .timeline-item p {
+            margin: 0;
+        }
+
         /* Carousel (Swipeable Sections) */
         .carousel {
             display: flex;
@@ -271,58 +312,127 @@
         </header>
         
         <section>
-            <h2>About Me</h2>
-            <!-- Displaying your photo -->
-            <div style="text-align: center; margin-bottom: 20px;">
-                <img id="profile-img" src="BHARATH.jpg" alt="Bharath B">
+            <div class="about-container">
+                <div>
+                    <h2><center>About Me</center></h2>
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <img id="profile-img" src="image/BHARATH.jpg" alt="Bharath B">
+                    </div>
+                    <p>Hello! I’m Bharath B, an Information Science Engineering student with a strong focus on networking, cloud computing, and real-time healthcare systems. I have hands-on experience in network configuration, cybersecurity, and building scalable, high-performance solutions that ensure both efficiency and security. My academic journey has been enriched with practical experiences, pushing me to explore new areas of technology while continuously refining my skills.</p>
+
+<p>Throughout my journey, I’ve worked on various innovative projects, including developing a healthcare monitoring system that integrates real-time data exchange using WebSocket protocols. I also have extensive experience designing and implementing NAS and mainframe servers, optimizing infrastructure to improve performance, scalability, and reliability. My experience has allowed me to work with cutting-edge technologies and apply them to real-world scenarios, making a tangible impact on the projects I’ve been part of.</p>
+
+<p>Some of my key projects include:</p>
+<ul>
+  <li><strong>Cloud-Based Healthcare Monitoring System:</strong> Developed a secure healthcare monitoring solution that incorporates WebSocket protocols for real-time patient data exchange. Implemented role-based access, ensuring 100% compliance with HIPAA data security standards.</li>
+  <li><strong>Anytime Medicine:</strong> A vending machine for automated medicine dispensing with real-time inventory tracking, secure access, and restocking alerts, reducing stock outages by 15%.</li>
+  <li><strong>YouTube Clone:</strong> A replica of YouTube with real-time data fetching using the YouTube API, with a responsive design that improved usability across devices by 35%.</li>
+  <li><strong>Cisco Tracer Projects:</strong> Network simulations for small businesses that improved connectivity by 25% using Cisco Packet Tracer.</li>
+</ul>
+
+<p>In addition to my technical expertise, I am deeply passionate about teaching and mentoring others in networking. I believe that empowering others to master networking concepts is crucial for the advancement of the technology field. I actively engage in mentoring fellow students and contributing to community projects, helping others build a solid foundation in networking to excel in their careers.</p>
+
+<p>When I’m not coding or diving deep into new technologies, I enjoy exploring innovations in cloud technologies, cybersecurity, and artificial intelligence. I’m always eager to collaborate on projects that push the boundaries of what technology can achieve, and I’m continuously striving to expand my knowledge and contribute to the growth of the tech community.</p>
+
+<p>In addition to my academic and project work, I have gained valuable industry experience through various internships. These opportunities have allowed me to apply my skills in real-world environments, working on projects that have made a tangible impact on the organizations I’ve worked with. My internships have not only helped me hone my technical abilities but also enhanced my communication, teamwork, and problem-solving skills.</p>
+
+<p>One of the most rewarding experiences in my career so far was my internship as a Networking Intern at PAIX Pvt Ltd. During this internship, I had the opportunity to work on configuring Aruba networks, optimizing network performance, and improving the uptime for hundreds of devices. This hands-on experience provided me with invaluable insights into network administration, troubleshooting, and scalability. It reinforced my passion for networking and solidified my goal of becoming an expert in this field.</p>
+
+<p>Another key internship I had was as an Entrepreneurship Intern, where I had the opportunity to work on market research and product outreach. This experience broadened my perspective, allowing me to understand the business side of technology and how to effectively communicate technical concepts to non-technical stakeholders. It was an enriching experience that taught me how important it is to bridge the gap between technology and business strategy.</p>
+
+<p>My internship as a Full Stack Development Intern further enhanced my technical skills. I worked with a team to build and enhance web applications, focusing on improving mobile usability by over 40%. This experience allowed me to learn the intricacies of front-end and back-end development while also understanding how to optimize applications for diverse user needs. It was a great opportunity to expand my skillset and develop my understanding of the full software development lifecycle.</p>
+
+<p>Looking ahead, I am focused on continuing my journey of personal and professional growth. I aim to build on my skills in networking and cloud computing and to contribute to projects that can have a significant positive impact. I am always seeking new opportunities for learning and collaboration, whether through projects, internships, or networking with like-minded professionals in the industry. I believe that through continuous learning, collaboration, and innovation, I can make a meaningful contribution to the technology field.</p>
+
+<p>As a future professional, I am particularly interested in exploring how emerging technologies such as Artificial Intelligence, Blockchain, and IoT can transform networking and cloud systems. I believe that these technologies, combined with solid networking foundations, will play a crucial role in shaping the future of the tech industry. I am excited to be part of this evolution and look forward to contributing to advancements that drive the future of technology.</p>
+
+<p>In conclusion, my goal is to become a well-rounded professional who excels in both the technical and business aspects of technology. Whether it’s designing and optimizing networks, developing scalable cloud solutions, or mentoring the next generation of tech leaders, I am eager to continue learning, growing, and contributing to the advancement of the industry. I’m always open to new ideas, collaborations, and opportunities that will help me achieve my goals and make a lasting impact on the world of technology.</p>
+
+<p>Feel free to connect with me for collaborations, projects, or if you want to learn more about networking, cloud computing, or any of the other exciting areas I’m passionate about!</p>
+
+<h3><strong>My Business Idea: Unlimited WiFi Worldwide</strong></h3>
+<p>In addition to my technical work, I have an exciting business idea that emerged during my internship as an Entrepreneurship Intern: creating a global network that combines both mobile data and WiFi into a single unified network. This concept aims to make connectivity more affordable and seamless by providing mobile calls and internet access through a single server, which can work through satellite coverage, even in remote locations like Mount Everest.</p>
+
+<p>In the modern world, we often pay separate bills for WiFi and mobile data, but my vision is to integrate both into a single, cost-effective system. This network will provide global connectivity through mobile devices, where mobile calls will be made through the internet, turning phone numbers into IP addresses. Subscribers will have unlimited data and phone calls with global access, no matter where they are located.</p>
+
+<p>With a focus on a scalable, resilient architecture, I plan to utilize satellite, fiber-optic, and 5G technologies to ensure optimal performance worldwide. The idea will not only target urban areas but also reach remote regions, bringing reliable connectivity to everyone. I aim to form partnerships with telecom providers globally and ensure that this solution will adhere to international regulations, focusing on data privacy and security.</p>
+
+<p>This business is designed to revolutionize how people stay connected, cutting down the high costs associated with traditional mobile services and making global communication more accessible. I’m excited about the potential impact of this idea and look forward to turning this vision into reality in the near future.</p>
+                </div>
+
+                <div class="timeline">
+                    <h2>Education & Experience</h2>
+                    <div class="timeline-item">
+                        <h3>2018-2019: SSLC</h3>
+                        <p>Royale Concorde High School, Bangalore<br>Percentage: 75%</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2019-2021: Pre-University (PCME)</h3>
+                        <p>Reva University, Bangalore<br>Percentage: 70%</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2021-2025: BE in Information Science & Engineering</h3>
+                        <p>Atria Institute of Technology, Bangalore<br>CGPA: 7.2</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2022: Full Stack Development Intern</h3>
+                        <p>Pentagon Space Pvt Ltd<br>Enhanced mobile usability by 40% through responsive web applications.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2023: Entrepreneurship Intern</h3>
+                        <p>Conducted market research, increasing product outreach by 20%.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2024: Networking Intern</h3>
+                        <p>PAIX Pvt Ltd<br>Configured Aruba networks, reducing downtime by 30% for 100+ devices.</p>
+                    </div>
+                </div>
             </div>
-            <p>Hello! I am Bharath B, an Information Science Engineering student specializing in networking, cloud computing, and real-time healthcare systems. I have hands-on experience in network configuration, cybersecurity, and building scalable solutions.</p>
-            <p>I have built several innovative projects like a healthcare monitoring system, a YouTube clone, and an automated criminal database. Additionally, I am passionate about teaching networking concepts to help others master this critical skill.</p>
         </section>
 
         <!-- Projects Section -->
         <section>
-            <h2>Projects</h2>
+            <h2><center>Projects</center></h2>
             <div class="carousel">
                 <!-- Anytime Medicine -->
                 <div class="carousel-item">
-                    <img src="Anytime Medicine.jpg" alt="Anytime Medicine">
-                    <h3>Anytime Medicine 2024</h3>
+                    <img src="image/Anytime Medicine.jpg" alt="Anytime Medicine">
+                    <h3>Anytime Medicine</h3>
                     <p>Designed a vending machine for automated medicine dispensing with real-time inventory tracking, secure access, and restocking alerts, reducing stock outages by 15%.</p>
-                    <a href="path/to/anytime_medicine.zip" class="carousel-button" download>Download Project</a>
-                    <a href="https://example.com/anytime-demo" class="carousel-button" target="_blank">View Live Demo</a>
+                    <a href="project folder/anytime_medicine.zip" class="carousel-button" download>Download Project</a>
+                    <a href="https://youtu.be/ofbO-C3g6_I" class="carousel-button" target="_blank">View Live Demo</a>
                 </div>
                 <!-- Cloud-Based Healthcare Monitoring System -->
                 <div class="carousel-item">
-                    <img src="Cloud-Based Healthcare Monitoring System.jpg" alt="Healthcare Monitoring">
-                    <h3>Cloud-Based Healthcare Monitoring System 2024</h3>
+                    <img src="image/Cloud-Based Healthcare Monitoring System.jpg" alt="Healthcare Monitoring">
+                    <h3>Cloud-Based Healthcare Monitoring System </h3>
                     <p>Developed a secure healthcare monitoring solution using the MERN stack, incorporating WebSocket protocols for real-time patient data exchange.</p>
-                    <a href="path/to/healthcare_system.zip" class="carousel-button" download>Download Project</a>
-                    <a href="https://example.com/healthcare-demo" class="carousel-button" target="_blank">View Live Demo</a>
+                    <a href="project folder/healthcare_system.zip" class="carousel-button" download>Download Project</a>
+                    <a href="https://youtu.be/56MD5YtKo0c" class="carousel-button" target="_blank">View Live Demo</a>
                 </div>
                 <!-- Cisco Tracer -->
                 <div class="carousel-item">
-                    <img src="Cisco Tracer Projects.png" alt="Cisco Tracer Projects">
-                    <h3>Cisco Tracer Projects 2024</h3>
+                    <img src="image/Cisco Tracer Projects.png" alt="Cisco Tracer Projects">
+                    <h3>Cisco Tracer Projects</h3>
                     <p>Designed and simulated network solutions for small businesses, achieving a 25% improvement in connectivity using Cisco Packet Tracer.</p>
-                    <a href="path/to/cisco_tracer.zip" class="carousel-button" download>Download Project</a>
-                    <a href="https://example.com/cisco-demo" class="carousel-button" target="_blank">View Live Demo</a>
+                    <a href="project folder/cisco_tracer.zip" class="carousel-button" download>Download Project</a>
+                    <a href="https://youtu.be/_yqDRZgjP5k?list=PLyEymK89ZUabd7h9FK4dGVdONbxFEJoyk" class="carousel-button" target="_blank">View Live Demo</a>
                 </div>
                 <!-- YouTube Clone -->
                 <div class="carousel-item">
-                    <img src="YouTube Clone.png" alt="YouTube Clone">
-                    <h3>YouTube Clone 2024</h3>
+                    <img src="image/YouTube Clone.png" alt="YouTube Clone">
+                    <h3>YouTube Clone</h3>
                     <p>Created a YouTube replica with real-time data fetching using the YouTube API. Integrated a responsive design, increasing usability across devices by 35%.</p>
-                    <a href="path/to/youtube_clone.zip" class="carousel-button" download>Download Project</a>
-                    <a href="https://example.com/youtube-demo" class="carousel-button" target="_blank">View Live Demo</a>
+                    <a href="project folder/youtube_clone.zip" class="carousel-button" download>Download Project</a>
+                    <a href="https://youtu.be/FHTbsZEJspU" class="carousel-button" target="_blank">View Live Demo</a>
                 </div>
                 <!-- Amazon Testing Project -->
                 <div class="carousel-item">
-                    <img src="Amazon Testing Project.jpg" alt="Amazon Testing Project">
-                    <h3>Amazon Testing Project 2024</h3>
+                    <img src="image/Amazon Testing Project.jpg" alt="Amazon Testing Project">
+                    <h3>Amazon Testing Project</h3>
                     <p>Executed functional and performance testing on an Amazon clone, utilizing automated testing tools to validate checkout processes and user workflows.</p>
-                    <a href="path/to/amazon_testing.zip" class="carousel-button" download>Download Project</a>
-                    <a href="https://example.com/amazon-demo" class="carousel-button" target="_blank">View Live Demo</a>
+                    <a href="project folder/amazon_testing.zip" class="carousel-button" download>Download Project</a>
+                    <a href="https://youtu.be/pwltP0hYb1w" class="carousel-button" target="_blank">View Live Demo</a>
                 </div>
             </div>
         </section>
@@ -335,10 +445,10 @@
 
         <!-- Contact Section -->
         <section>
-            <h2>Contact Me</h2>
+            <h2><center>Contact Me</center></h2>
             <div class="contact">
-                <a href="mailto:bharathbabu200212@gmail.com">📧 Email: bharathbabu200212@gmail.com</a>
-                <a href="https://www.linkedin.com/in/bharath12200210" target="_blank">🔗 LinkedIn: linkedin.com/in/bharath12200210</a>
+                <a href="mailto:bharathbabu200212@gmail.com">📧 Email</a>
+                <a href="https://www.linkedin.com/in/bharath12200210" target="_blank">🔗 LinkedIn</a>
                 <p>Phone: +91 9148584623</p>
             </div>
         </section>
